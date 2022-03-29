@@ -2,6 +2,17 @@
 
 点击按钮，显示弹框，点击图标复制图标代码
 
+### 按需引入
+
+```js
+// main.ts
+import chooseIcon from 'vue3-m-components/chooseIcon'
+import 'vue3-m-components/chooseIcon/style.css'
+
+// ...
+app.use(chooseIcon)
+```
+
 ### 基本用法
 
 <div style="margin:25px 0;border:1px solid #eee;padding:15px">
@@ -20,7 +31,7 @@
 ```vue
 <m-choose-icon title='选择图标' v-model:visible='visible'>选择图标</<m-choose-icon>
 
-<script setup>
+<script  setup>
   import {ref} from 'vue'
 
   let visible=ref(false)
